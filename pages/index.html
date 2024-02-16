@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #031207;
+        background-image: url(https://images.unsplash.com/photo-1475518845976-0fd87b7e4e5d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      #card {
+        width: fit-content;
+        border: 20px #031207;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+        background-color: #abf2a9;
+        background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.9)
+          ),
+          url(https://images.unsplash.com/photo-1523057530100-383d7fbc77a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5vcnRoZXJuJTIwbGlnaHR8ZW58MHx8MHx8fDA%3D);
+      }
+
+      .card-body {
+        padding: 2em;
+        flex: 1;
+      }
+
+      .form-control {
+        color: #f1f6f4;
+        border-radius: 20px;
+        border: 1px solid #abf2a9;
+      }
+
+      .btn-primary {
+        border-radius: 20px;
+        background-color: #13d994;
+        border: none;
+      }
+
+      #card-image {
+        flex: 1;
+        height: 500px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        max-height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="text-center" id="section">
+      <div class="card mx-9 lg-12 mx-md-5" id="card">
+        <img
+          id="card-image"
+          src="https://images.unsplash.com/photo-1579033461380-adb47c3eb938?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm9ydGhlcm4lMjBsaWdodHxlbnwwfHwwfHx8MA%3D%3D"
+          alt="image"
+        />
+        <div class="card-body px-md-5">
+          <h2 class="fw-bold mb-5">registration form</h2>
+          <form method="post" action="/register" style="text-align: left">
+            <div class="form-outline mb-4">
+              <label class="from-label" for="name">name</label>
+              <input type="text" id="name" name="name" class="form-control" />
+            </div>
+            <div class="from-outline mb-4">
+              <label class="from-label" for="mail">email address</label>
+              <input type="email" id="mail" name="email" class="form-control" />
+            </div>
+            <div class="from-outline mb-4">
+              <label class="from-label" for="pass">password</label>
+              <input
+                type="password"
+                id="pass"
+                name="password"
+                class="form-control"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mb-4">
+              register
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
